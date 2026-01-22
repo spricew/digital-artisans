@@ -1,7 +1,8 @@
 'use client'
 import { codes } from '@/lib/data/errorCodes';
 import { Info, CircleQuestionMark, RotateCcw } from 'lucide-react';
-import PrimaryButton from './components/ui/primaryButton';
+import PrimaryButton from './components/ui/PrimaryButton';
+import ErrorImg from './components/ui/ErrorImg';
 
 export default function GlobalError({
     error,
@@ -19,10 +20,7 @@ export default function GlobalError({
     return (
         <div className="flex flex-col items-center justify-center gap-4 h-screen">
 
-            <div className='flex items-center justify-center p-6 size-64 rounded-full bg-surfaceContainerHigh'>
-                <img src={info.image.src} className='w-full h-full object-center object-cover'/>
-            </div>
-
+            <ErrorImg imagesrc={info.image.src} />
             <h2 className='text-6xl font-medium text-onPrimaryContainer'>{errorCode} - {info.title}</h2>
 
             <div className="flex items-center justify-center gap-4 w-full">
