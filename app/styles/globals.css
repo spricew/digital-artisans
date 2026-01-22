@@ -114,6 +114,13 @@ body {
   color: white;
 }
 
+@supports (corner-shape: squircle) {
+  .squircle {
+    border-radius: 2.5rem;
+    corner-shape: squircle;
+  }
+}
+
 /* *{
   outline: red  solid 1px;
   box-sizing: border-box;
