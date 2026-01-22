@@ -1,47 +1,55 @@
 @import "tailwindcss";
 
 @theme {
-  /* color primario verde */
-  --color-primary-50: #f1fdf0;
-  --color-primary-100: #dcfddb;
-  --color-primary-200: #baf9b9;
-  --color-primary-300: #85f283;
-  --color-primary-400: #48e246;
-  --color-primary-500: #20c91e;
-  --color-primary-600: #16b514;
-  --color-primary-700: #138312;
-  --color-primary-800: #146714;
-  --color-primary-900: #125513;
-  --color-primary-950: #042f06;
-  --color-primary-1000: #021a03;
-
-  /* color secundario amarillo */
-  --color-secondary-50: #fffcea;
-  --color-secondary-100: #fff3c5;
-  --color-secondary-200: #ffe785;
-  --color-secondary-300: #ffd346;
-  --color-secondary-400: #ffbe1b;
-  --color-secondary-500: #ff9f0a;
-  --color-secondary-600: #e27300;
-  --color-secondary-700: #bb4e02;
-  --color-secondary-800: #983c08;
-  --color-secondary-900: #7c320b;
-  --color-secondary-950: #481800;
-  --color-secondary-1000: #1a1001;
-  --color-secondary-1100: #0d0801;
-
-  /* color terciario azul */
-  --color-tertiary-50: #effcfb;
-  --color-tertiary-100: #d6f7f6;
-  --color-tertiary-200: #b2efee;
-  --color-tertiary-300: #7de3e3;
-  --color-tertiary-400: #43ced0;
-  --color-tertiary-500: #25b1b5;
-  --color-tertiary-600: #228f98;
-  --color-tertiary-700: #22747d;
-  --color-tertiary-800: #235f67;
-  --color-tertiary-900: #224f57;
-  --color-tertiary-950: #11343b;
+  --color-primary: #FABA73;
+  --color-surfaceTint: #FABA73;
+  --color-onPrimary: #482900;
+  --color-primaryContainer: #673D00;
+  --color-onPrimaryContainer: #FFDDBB;
+  --color-secondary: #E0C1A3;
+  --color-onSecondary: #402D17;
+  --color-secondaryContainer: #58432C;
+  --color-onSecondaryContainer: #FDDDBD;
+  --color-tertiary: #BDCC9C;
+  --color-onTertiary: #293412;
+  --color-tertiaryContainer: #3F4B26;
+  --color-onTertiaryContainer: #D9E9B6;
+  --color-error: #FFB4AB;
+  --color-onError: #690005;
+  --color-errorContainer: #93000A;
+  --color-onErrorContainer: #FFDAD6;
+  --color-background: #18120C;
+  --color-onBackground: #EEE0D5;
+  --color-surface: #18120C;
+  --color-onSurface: #EEE0D5;
+  --color-surfaceVariant: #50453A;
+  --color-onSurfaceVariant: #D4C4B5;
+  --color-outline: #9D8E81;
+  --color-outlineVariant: #50453A;
+  --color-shadow: #000000;
+  --color-scrim: #000000;
+  --color-inverseSurface: #EEE0D5;
+  --color-inverseOnSurface: #372F27;
+  --color-inversePrimary: #845415;
+  --color-primaryFixed: #FFDDBB;
+  --color-onPrimaryFixed: #2B1700;
+  --color-primaryFixedDim: #FABA73;
+  --color-onPrimaryFixedVariant: #673D00;
+  --color-secondaryFixed: #FDDDBD;
+  --color-onSecondaryFixed: #281805;
+  --color-secondaryFixedDim: #E0C1A3;
+  --color-onSecondaryFixedVariant: #58432C;
+  --color-tertiaryFixed: #D9E9B6;
+  --color-onTertiaryFixed: #141F01;
+  --color-tertiaryFixedDim: #BDCC9C;
+  --color-onTertiaryFixedVariant: #3F4B26;
+  --color-surfaceDim: #18120C;
+  --color-surfaceBright: #403830;
+  --color-surfaceContainerLowest: #130D07;
+  --color-surfaceContainerLow: #211A14;
+  --color-surfaceContainer: #251E17;
+  --color-surfaceContainerHigh: #302921;
+  --color-surfaceContainerHighest: #3B332C;
 }
 
 /* Reset básico */
