@@ -1,6 +1,7 @@
 'use client'
 import { codes } from '@/lib/data/errorCodes';
 import { Info, CircleQuestionMark, RotateCcw } from 'lucide-react';
+import PrimaryButton from './components/ui/primaryButton';
 
 export default function GlobalError({
     error,
@@ -44,16 +45,11 @@ export default function GlobalError({
 
             </div>
 
-
-            <button
-                onClick={reset}
-                className="flex items-center justify-center gap-3 px-5 py-2.5 mt-2 rounded-full
-                 bg-primaryContainer text-onPrimaryContainer font-semibold
-                transition ease-out duration-300 hover:scale-105 cursor-pointer"
-            >
-                <RotateCcw className="size-5 text-onPrimaryContainer" strokeWidth={2.8} />
-                Intentar de nuevo
-            </button>
+            <PrimaryButton
+             text='Intentar de nuevo'
+             IconBtn={RotateCcw}
+             onClick={reset}
+             />
         </div>
     )
 }
