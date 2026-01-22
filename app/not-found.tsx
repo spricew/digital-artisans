@@ -5,10 +5,10 @@ export const metadata: Metadata = {
   title: "Not Found",
 };
 
-import Link from 'next/link';
 import { ChevronRight } from 'lucide-react';
 import ErrorImg from "./components/ui/errorImg";
 import notFoundImg from '@/public/notFound.png'
+import PrimaryButton from "./components/ui/primaryButton";
 
 export default function NotFound() {
   return (
@@ -19,10 +19,12 @@ export default function NotFound() {
         Ups... no pudimos encontrar la página que buscas. Es posible que la dirección esté
         incorrecta o que la página haya sido movida.
       </p>
-      <Link href="/" className='inline-flex py-2 px-4 rounded-full bg-onPrimary font-semibold text-onPrimaryContainer'>
-        Return Home
-        <ChevronRight size={25} strokeWidth={2.2} />
-      </Link>
+      
+      <PrimaryButton
+        text='Return Home'
+        IconBtn={ChevronRight}
+        href='/'
+      />
     </div>
   );
 }
