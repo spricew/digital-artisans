@@ -1,7 +1,6 @@
 'use client'
 
-import { Info } from "lucide-react";
-import { CircleQuestionMark } from "lucide-react";
+import { Info, CircleQuestionMark, RotateCcw } from 'lucide-react';
 
 const ERROR_CODES = {
     400: { title: "Bad Request", simple: "Petición mal formada", blame: "Usuario / Navegador" },
@@ -32,7 +31,7 @@ export default function GlobalError({
 
             <div className="flex items-center justify-center gap-4 w-full">
 
-                <div className="squircle flex justify-start items-center gap-3 p-6 min-w-fit w-64 h-24 rounded-xl bg-primaryContainer">
+                <div className="squircle flex justify-start items-center gap-3 p-6 min-w-fit w-64 h-24 rounded-xl bg-surfaceContainerHigh">
                     <CircleQuestionMark className="size-10 text-onPrimaryContainer" strokeWidth={2.2} />
                     <div className="flex flex-col">
                         <span className="text-2xl font-semibold text-onPrimaryContainer">Significado:</span>
@@ -40,7 +39,7 @@ export default function GlobalError({
                     </div>
                 </div>
 
-                <div className="squircle flex justify-start items-center gap-3 p-6 min-w-fit w-64 h-24 rounded-xl bg-primaryContainer">
+                <div className="squircle flex justify-start items-center gap-3 p-6 min-w-fit w-64 h-24 rounded-xl bg-surfaceContainerHigh">
                     <Info className="size-10 text-onPrimaryContainer" strokeWidth={2.2} />
                     <div className="flex flex-col">
                         <span className="text-2xl font-semibold text-onPrimaryContainer">La culpa es de:</span>
@@ -49,12 +48,15 @@ export default function GlobalError({
                 </div>
 
             </div>
-        
+
 
             <button
                 onClick={reset}
-                className="mt-2 px-6 py-2 bg-white text-black rounded hover:bg-gray-200 transition"
+                className="flex items-center justify-center gap-3 px-5 py-2.5 mt-2 rounded-full
+                 bg-primaryContainer text-onPrimaryContainer
+                transition ease-out duration-300 hover:scale-105 cursor-pointer"
             >
+                <RotateCcw className="size-5 text-onPrimaryContainer" strokeWidth={2.2} />
                 Intentar de nuevo
             </button>
         </div>
