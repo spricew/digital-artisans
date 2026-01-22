@@ -10,9 +10,9 @@ import Link from 'next/link';
 
 export default function NotFound() {
   return (
-    <div className='flex flex-col justify-center items-center gap-4 w-full min-h-screen bg-[#18120c]'>
+    <div className='flex flex-col justify-center items-center gap-6 w-full min-h-screen bg-[#18120c]'>
       <h2 className='text-6xl font-medium text-onPrimaryContainer'>404 - Page Not Found</h2>
-      <p>Could not find requested resource</p>
+      <p>Página no encontrada.</p>
       <Link href="/" className='inline-flex py-2 px-4 rounded-full bg-onPrimary font-semibold text-onPrimaryContainer'>
       Return Home
       <ChevronRight size={25} strokeWidth={2.2} />
