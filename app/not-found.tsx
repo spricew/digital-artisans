@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Not Found",
+};
+
 
 import { ChevronRight } from 'lucide-react';
 import Link from 'next/link';
