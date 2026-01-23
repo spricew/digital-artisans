@@ -6,9 +6,9 @@ export const metadata: Metadata = {
 };
 
 import { ChevronRight } from 'lucide-react';
-import ErrorImg from "./components/ui/errorImg";
+import ErrorImg from "./components/ui/ErrorImg";
 import notFoundImg from '@/public/notFound.png'
-import PrimaryButton from "./components/ui/primaryButton";
+import PrimaryButton from "./components/ui/PrimaryButton";
 
 export default function NotFound() {
   return (
