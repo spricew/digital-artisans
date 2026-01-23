@@ -13,7 +13,7 @@ export default function ErrorImg({ imagesrc }: ErrorImgProps) {
     <div className='flex items-center justify-center p-6 size-64 rounded-full bg-surfaceContainerHigh'>
       <img 
         src={imagePath} 
-        className='w-full h-full object-center object-contain'
+        className='w-96 object-center object-contain'
         alt="Error illustration" 
       />
     </div>
