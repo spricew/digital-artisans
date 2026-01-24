@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./styles/globals.css";
+import Navbar from "./components/ui/Navbar";
 
 export const metadata: Metadata = {
   title: {
@@ -19,7 +20,8 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        {children}
+      <Navbar />
+      {children}
       </body>
     </html>
   );
