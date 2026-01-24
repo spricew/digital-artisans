@@ -13,7 +13,7 @@ interface ButtonProps {
 export default function PrimaryButton({ text, href, IconBtn, onClick, extraclass }: ButtonProps) {
 
     const baseStyles = `flex items-center justify-center gap-2 px-5 py-2.5 rounded-full
-                 bg-primaryContainer text-onPrimaryContainer font-semibold
+                text-lg tracking-normal bg-primaryContainer text-onPrimaryContainer font-semibold
                 transition ease-out duration-300 hover:scale-105 cursor-pointer ${extraclass}`;
 
     return (
