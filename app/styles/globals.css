@@ -1,55 +1,198 @@
 @import "tailwindcss";
 
+/* Esquema CLARO default (Light Scheme) */
+:root {
+  --sys-primary: #845415;
+  --sys-surfaceTint: #845415;
+  --sys-onPrimary: #FFFFFF;
+  --sys-primaryContainer: #FFDDBB;
+  --sys-onPrimaryContainer: #673D00;
+  --sys-secondary: #725A41;
+  --sys-onSecondary: #FFFFFF;
+  --sys-secondaryContainer: #FDDDBD;
+  --sys-onSecondaryContainer: #58432C;
+  --sys-tertiary: #56633B;
+  --sys-onTertiary: #FFFFFF;
+  --sys-tertiaryContainer: #D9E9B6;
+  --sys-onTertiaryContainer: #3F4B26;
+  --sys-error: #BA1A1A;
+  --sys-onError: #FFFFFF;
+  --sys-errorContainer: #FFDAD6;
+  --sys-onErrorContainer: #93000A;
+  --sys-background: #FFF8F4;
+  --sys-onBackground: #211A14;
+  --sys-surface: #FFF8F4;
+  --sys-onSurface: #211A14;
+  --sys-surfaceVariant: #F1DFD0;
+  --sys-onSurfaceVariant: #50453A;
+  --sys-outline: #827568;
+  --sys-outlineVariant: #D4C4B5;
+  --sys-shadow: #000000;
+  --sys-scrim: #000000;
+  --sys-inverseSurface: #372F27;
+  --sys-inverseOnSurface: #FDEEE3;
+  --sys-inversePrimary: #FABA73;
+  --sys-primaryFixed: #FFDDBB;
+  --sys-onPrimaryFixed: #2B1700;
+  --sys-primaryFixedDim: #FABA73;
+  --sys-onPrimaryFixedVariant: #673D00;
+  --sys-secondaryFixed: #FDDDBD;
+  --sys-onSecondaryFixed: #281805;
+  --sys-secondaryFixedDim: #E0C1A3;
+  --sys-onSecondaryFixedVariant: #58432C;
+  --sys-tertiaryFixed: #D9E9B6;
+  --sys-onTertiaryFixed: #141F01;
+  --sys-tertiaryFixedDim: #BDCC9C;
+  --sys-onTertiaryFixedVariant: #3F4B26;
+  --sys-surfaceDim: #E5D8CC;
+  --sys-surfaceBright: #FFF8F4;
+  --sys-surfaceContainerLowest: #FFFFFF;
+  --sys-surfaceContainerLow: #FFF1E6;
+  --sys-surfaceContainer: #FAEBE0;
+  --sys-surfaceContainerHigh: #F4E6DA;
+  --sys-surfaceContainerHighest: #EEE0D5;
+}
+
+/* Esquema OSCURO (Dark Scheme) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --sys-primary: #FABA73;
+    --sys-surfaceTint: #FABA73;
+    --sys-onPrimary: #482900;
+    --sys-primaryContainer: #673D00;
+    --sys-onPrimaryContainer: #FFDDBB;
+    --sys-secondary: #E0C1A3;
+    --sys-onSecondary: #402D17;
+    --sys-secondaryContainer: #58432C;
+    --sys-onSecondaryContainer: #FDDDBD;
+    --sys-tertiary: #BDCC9C;
+    --sys-onTertiary: #293412;
+    --sys-tertiaryContainer: #3F4B26;
+    --sys-onTertiaryContainer: #D9E9B6;
+    --sys-error: #FFB4AB;
+    --sys-onError: #690005;
+    --sys-errorContainer: #93000A;
+    --sys-onErrorContainer: #FFDAD6;
+    --sys-background: #18120C;
+    --sys-onBackground: #EEE0D5;
+    --sys-surface: #18120C;
+    --sys-onSurface: #EEE0D5;
+    --sys-surfaceVariant: #50453A;
+    --sys-onSurfaceVariant: #D4C4B5;
+    --sys-outline: #9D8E81;
+    --sys-outlineVariant: #50453A;
+    --sys-shadow: #000000;
+    --sys-scrim: #000000;
+    --sys-inverseSurface: #EEE0D5;
+    --sys-inverseOnSurface: #372F27;
+    --sys-inversePrimary: #845415;
+    --sys-primaryFixed: #FFDDBB;
+    --sys-onPrimaryFixed: #2B1700;
+    --sys-primaryFixedDim: #FABA73;
+    --sys-onPrimaryFixedVariant: #673D00;
+    --sys-secondaryFixed: #FDDDBD;
+    --sys-onSecondaryFixed: #281805;
+    --sys-secondaryFixedDim: #E0C1A3;
+    --sys-onSecondaryFixedVariant: #58432C;
+    --sys-tertiaryFixed: #D9E9B6;
+    --sys-onTertiaryFixed: #141F01;
+    --sys-tertiaryFixedDim: #BDCC9C;
+    --sys-onTertiaryFixedVariant: #3F4B26;
+    --sys-surfaceDim: #18120C;
+    --sys-surfaceBright: #403830;
+    --sys-surfaceContainerLowest: #130D07;
+    --sys-surfaceContainerLow: #211A14;
+    --sys-surfaceContainer: #251E17;
+    --sys-surfaceContainerHigh: #302921;
+    --sys-surfaceContainerHighest: #3B332C;
+  }
+}
+
+/* --------------------------------------------- */
+/* CONFIGURACIÓN DE TAILWIND (Mapeo a variables) */
+/* --------------------------------------------- */
 @theme {
-  --color-primary: #FABA73;
-  --color-surfaceTint: #FABA73;
-  --color-onPrimary: #482900;
-  --color-primaryContainer: #673D00;
-  --color-onPrimaryContainer: #FFDDBB;
-  --color-secondary: #E0C1A3;
-  --color-onSecondary: #402D17;
-  --color-secondaryContainer: #58432C;
-  --color-onSecondaryContainer: #FDDDBD;
-  --color-tertiary: #BDCC9C;
-  --color-onTertiary: #293412;
-  --color-tertiaryContainer: #3F4B26;
-  --color-onTertiaryContainer: #D9E9B6;
-  --color-error: #FFB4AB;
-  --color-onError: #690005;
-  --color-errorContainer: #93000A;
-  --color-onErrorContainer: #FFDAD6;
-  --color-background: #18120C;
-  --color-onBackground: #EEE0D5;
-  --color-surface: #18120C;
-  --color-onSurface: #EEE0D5;
-  --color-surfaceVariant: #50453A;
-  --color-onSurfaceVariant: #D4C4B5;
-  --color-outline: #9D8E81;
-  --color-outlineVariant: #50453A;
-  --color-shadow: #000000;
-  --color-scrim: #000000;
-  --color-inverseSurface: #EEE0D5;
-  --color-inverseOnSurface: #372F27;
-  --color-inversePrimary: #845415;
-  --color-primaryFixed: #FFDDBB;
-  --color-onPrimaryFixed: #2B1700;
-  --color-primaryFixedDim: #FABA73;
-  --color-onPrimaryFixedVariant: #673D00;
-  --color-secondaryFixed: #FDDDBD;
-  --color-onSecondaryFixed: #281805;
-  --color-secondaryFixedDim: #E0C1A3;
-  --color-onSecondaryFixedVariant: #58432C;
-  --color-tertiaryFixed: #D9E9B6;
-  --color-onTertiaryFixed: #141F01;
-  --color-tertiaryFixedDim: #BDCC9C;
-  --color-onTertiaryFixedVariant: #3F4B26;
-  --color-surfaceDim: #18120C;
-  --color-surfaceBright: #403830;
-  --color-surfaceContainerLowest: #130D07;
-  --color-surfaceContainerLow: #211A14;
-  --color-surfaceContainer: #251E17;
-  --color-surfaceContainerHigh: #302921;
-  --color-surfaceContainerHighest: #3B332C;
+  --color-primary: var(--sys-primary);
+  --color-surfaceTint: var(--sys-surfaceTint);
+  --color-onPrimary: var(--sys-onPrimary);
+  --color-primaryContainer: var(--sys-primaryContainer);
+  --color-onPrimaryContainer: var(--sys-onPrimaryContainer);
+  
+  --color-secondary: var(--sys-secondary);
+  --color-onSecondary: var(--sys-onSecondary);
+  --color-secondaryContainer: var(--sys-secondaryContainer);
+  --color-onSecondaryContainer: var(--sys-onSecondaryContainer);
+  
+  --color-tertiary: var(--sys-tertiary);
+  --color-onTertiary: var(--sys-onTertiary);
+  --color-tertiaryContainer: var(--sys-tertiaryContainer);
+  --color-onTertiaryContainer: var(--sys-onTertiaryContainer);
+  
+  --color-error: var(--sys-error);
+  --color-onError: var(--sys-onError);
+  --color-errorContainer: var(--sys-errorContainer);
+  --color-onErrorContainer: var(--sys-onErrorContainer);
+  
+  --color-background: var(--sys-background);
+  --color-onBackground: var(--sys-onBackground);
+  --color-surface: var(--sys-surface);
+  --color-onSurface: var(--sys-onSurface);
+  
+  --color-surfaceVariant: var(--sys-surfaceVariant);
+  --color-onSurfaceVariant: var(--sys-onSurfaceVariant);
+  --color-outline: var(--sys-outline);
+  --color-outlineVariant: var(--sys-outlineVariant);
+  
+  --color-shadow: var(--sys-shadow);
+  --color-scrim: var(--sys-scrim);
+  
+  --color-inverseSurface: var(--sys-inverseSurface);
+  --color-inverseOnSurface: var(--sys-inverseOnSurface);
+  --color-inversePrimary: var(--sys-inversePrimary);
+  
+  --color-primaryFixed: var(--sys-primaryFixed);
+  --color-onPrimaryFixed: var(--sys-onPrimaryFixed);
+  --color-primaryFixedDim: var(--sys-primaryFixedDim);
+  --color-onPrimaryFixedVariant: var(--sys-onPrimaryFixedVariant);
+  
+  --color-secondaryFixed: var(--sys-secondaryFixed);
+  --color-onSecondaryFixed: var(--sys-onSecondaryFixed);
+  --color-secondaryFixedDim: var(--sys-secondaryFixedDim);
+  --color-onSecondaryFixedVariant: var(--sys-onSecondaryFixedVariant);
+  
+  --color-tertiaryFixed: var(--sys-tertiaryFixed);
+  --color-onTertiaryFixed: var(--sys-onTertiaryFixed);
+  --color-tertiaryFixedDim: var(--sys-tertiaryFixedDim);
+  --color-onTertiaryFixedVariant: var(--sys-onTertiaryFixedVariant);
+  
+  --color-surfaceDim: var(--sys-surfaceDim);
+  --color-surfaceBright: var(--sys-surfaceBright);
+  --color-surfaceContainerLowest: var(--sys-surfaceContainerLowest);
+  --color-surfaceContainerLow: var(--sys-surfaceContainerLow);
+  --color-surfaceContainer: var(--sys-surfaceContainer);
+  --color-surfaceContainerHigh: var(--sys-surfaceContainerHigh);
+  --color-surfaceContainerHighest: var(--sys-surfaceContainerHighest);
+}
+
+/* ----------------------------------------------------------- */
+/* PALETAS FIJAS (Opcional - No cambian con el tema)           */
+/* Útiles si necesitas un tono exacto como bg-ref-primary-40   */
+/* ----------------------------------------------------------- */
+
+@theme {
+  --color-ref-primary-0: #000000;
+  --color-ref-primary-10: #2B1700;
+  --color-ref-primary-20: #482900;
+  --color-ref-primary-30: #673D00;
+  --color-ref-primary-40: #885200;
+  --color-ref-primary-50: #AA6800;
+  --color-ref-primary-60: #CE7F00;
+  --color-ref-primary-70: #F29600;
+  --color-ref-primary-80: #FFB868;
+  --color-ref-primary-90: #FFDDBB;
+  --color-ref-primary-95: #FFEEDF;
+  --color-ref-primary-99: #FFFBFF;
+  --color-ref-primary-100: #FFFFFF;
 }
 
 /* Reset básico */
@@ -57,43 +200,47 @@
   box-sizing: border-box;
 }
 
-
+/* DM Sans - Light */
 @font-face {
-  font-family: 'Urbanist';
-  src: url('/fonts/Urbanist-Light.woff2') format('woff2');
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Light.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
+/* DM Sans - Regular */
 @font-face {
-  font-family: 'Urbanist';
-  src: url('/fonts/Urbanist-Regular.woff2') format('woff2');
-  font-weight: normal;
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Regular.woff2') format('woff2');
+  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+/* DM Sans - Medium */
 @font-face {
-  font-family: 'Urbanist';
-  src: url('/fonts/Urbanist-Medium.woff2') format('woff2');
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Medium.woff2') format('woff2');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
+/* DM Sans - SemiBold */
 @font-face {
-  font-family: 'Urbanist';
-  src: url('/fonts/Urbanist-SemiBold.woff2') format('woff2');
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 
+/* DM Sans - Bold */
 @font-face {
-  font-family: 'Urbanist';
-  src: url('/fonts/Urbanist-Bold.woff2') format('woff2');
-  font-weight: bold;
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-Bold.woff2') format('woff2');
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
@@ -110,7 +257,7 @@ html {
 }
 
 body {
-  font: 20px "Urbanist", system-ui, Arial, Helvetica, sans-serif;
+  font: 20px "DM Sans", system-ui, Arial, Helvetica, sans-serif;
   color: white;
   background-color: var(--color-background);
 }
