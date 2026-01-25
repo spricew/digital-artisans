@@ -13,7 +13,7 @@ interface ButtonProps {
 export default function PrimaryButton({ text, href, IconBtn, onClick, extraclass }: ButtonProps) {
 
     const baseStyles = `flex items-center justify-center gap-2 px-5 py-2.5 rounded-full
-                text-lg tracking-normal bg-primaryContainer text-onPrimaryContainer font-semibold
+                text-xl tracking-tighter bg-primaryContainer text-onPrimaryContainer font-medium
                 transition ease-out duration-300 hover:scale-105 cursor-pointer ${extraclass}`;
 
     return (
@@ -22,13 +22,13 @@ export default function PrimaryButton({ text, href, IconBtn, onClick, extraclass
                 (
                     <Link href={href} className={`${baseStyles}`}>
                         {text}
-                        <IconBtn className="size-5 text-onPrimaryContainer" strokeWidth={3} />
+                        <IconBtn className="size-5 text-onPrimaryContainer" strokeWidth={2.5} />
                     </Link>
                 ) : (
                     <button className={`${baseStyles}`}
                         onClick={onClick}>
 
-                        <IconBtn className="size-5 text-onPrimaryContainer" strokeWidth={3} />
+                        <IconBtn className="size-5 text-onPrimaryContainer" strokeWidth={2.5} />
                         {text}
 
                     </button>)}
