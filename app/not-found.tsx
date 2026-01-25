@@ -12,16 +12,17 @@ import PrimaryButton from "./components/ui/PrimaryButton";
 
 export default function NotFound() {
   return (
-    <div className='flex flex-col justify-center items-center gap-6 w-full h-full'>
+    <div className='flex flex-col justify-center items-center gap-3 w-full h-full'>
       {/* <ErrorImg imagesrc={notFoundImg} /> */}
-      <h2 className='text-6xl font-medium text-onPrimaryContainer'>404 - Page Not Found</h2>
-      <p className="squircle max-w-2xl text-xl text-center text-balance leading-7 p-6 text-onSurface bg-surfaceContainerHigh rounded-lg">
+      <h2 className='text-6xl font-bold tracking-tighter text-onBackground px-5'>Página no encontrada...</h2>
+      <p className="squircle max-w-xl p-6 rounded-lg text-pretty text-xl text-center leading-7 
+       text-onSurface bg-surfaceContainerHigh">
         Ups... no pudimos encontrar la página que buscas. Es posible que la dirección esté
         incorrecta o que la página haya sido movida.
       </p>
       
       <PrimaryButton
-        text='Return Home'
+        text='Regresar al inicio'
         IconBtn={ChevronRight}
         href='/'
       />
