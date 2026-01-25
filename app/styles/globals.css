@@ -1,110 +1,132 @@
 @import "tailwindcss";
 
-/* Esquema CLARO default (Light Scheme) */
+/* Esquema default CLARO (Light Scheme) */
 :root {
-  --sys-primary: #845415;
-  --sys-surfaceTint: #845415;
+  --sys-primary: #775A0B;
+  --sys-surfaceTint: #775A0B;
   --sys-onPrimary: #FFFFFF;
-  --sys-primaryContainer: #FFDDBB;
-  --sys-onPrimaryContainer: #673D00;
-  --sys-secondary: #725A41;
+  --sys-primaryContainer: #FFDF9E;
+  --sys-onPrimaryContainer: #5B4300;
+  
+  --sys-secondary: #785A0B;
   --sys-onSecondary: #FFFFFF;
-  --sys-secondaryContainer: #FDDDBD;
-  --sys-onSecondaryContainer: #58432C;
-  --sys-tertiary: #56633B;
+  --sys-secondaryContainer: #FFDEA0;
+  --sys-onSecondaryContainer: #5C4300;
+  
+  --sys-tertiary: #006A67;
   --sys-onTertiary: #FFFFFF;
-  --sys-tertiaryContainer: #D9E9B6;
-  --sys-onTertiaryContainer: #3F4B26;
+  --sys-tertiaryContainer: #9CF1ED;
+  --sys-onTertiaryContainer: #00504D;
+  
   --sys-error: #BA1A1A;
   --sys-onError: #FFFFFF;
   --sys-errorContainer: #FFDAD6;
   --sys-onErrorContainer: #93000A;
-  --sys-background: #FFF8F4;
-  --sys-onBackground: #211A14;
-  --sys-surface: #FFF8F4;
-  --sys-onSurface: #211A14;
-  --sys-surfaceVariant: #F1DFD0;
-  --sys-onSurfaceVariant: #50453A;
-  --sys-outline: #827568;
-  --sys-outlineVariant: #D4C4B5;
+  
+  --sys-background: #FFF8F2;
+  --sys-onBackground: #1F1B13;
+  --sys-surface: #F5FAFB;
+  --sys-onSurface: #171D1E;
+  
+  --sys-surfaceVariant: #DAE4E5;
+  --sys-onSurfaceVariant: #3F484A;
+  --sys-outline: #6F797A;
+  --sys-outlineVariant: #BEC8C9;
+  
   --sys-shadow: #000000;
   --sys-scrim: #000000;
-  --sys-inverseSurface: #372F27;
-  --sys-inverseOnSurface: #FDEEE3;
-  --sys-inversePrimary: #FABA73;
-  --sys-primaryFixed: #FFDDBB;
-  --sys-onPrimaryFixed: #2B1700;
-  --sys-primaryFixedDim: #FABA73;
-  --sys-onPrimaryFixedVariant: #673D00;
-  --sys-secondaryFixed: #FDDDBD;
-  --sys-onSecondaryFixed: #281805;
-  --sys-secondaryFixedDim: #E0C1A3;
-  --sys-onSecondaryFixedVariant: #58432C;
-  --sys-tertiaryFixed: #D9E9B6;
-  --sys-onTertiaryFixed: #141F01;
-  --sys-tertiaryFixedDim: #BDCC9C;
-  --sys-onTertiaryFixedVariant: #3F4B26;
-  --sys-surfaceDim: #E5D8CC;
-  --sys-surfaceBright: #FFF8F4;
+  
+  --sys-inverseSurface: #2B3133;
+  --sys-inverseOnSurface: #ECF2F3;
+  --sys-inversePrimary: #E9C16C;
+  
+  --sys-primaryFixed: #FFDF9E;
+  --sys-onPrimaryFixed: #261A00;
+  --sys-primaryFixedDim: #E9C16C;
+  --sys-onPrimaryFixedVariant: #5B4300;
+  
+  --sys-secondaryFixed: #FFDEA0;
+  --sys-onSecondaryFixed: #261A00;
+  --sys-secondaryFixedDim: #EAC16C;
+  --sys-onSecondaryFixedVariant: #5C4300;
+  
+  --sys-tertiaryFixed: #9CF1ED;
+  --sys-onTertiaryFixed: #00201F;
+  --sys-tertiaryFixedDim: #80D5D1;
+  --sys-onTertiaryFixedVariant: #00504D;
+  
+  --sys-surfaceDim: #D5DBDC;
+  --sys-surfaceBright: #F5FAFB;
   --sys-surfaceContainerLowest: #FFFFFF;
-  --sys-surfaceContainerLow: #FFF1E6;
-  --sys-surfaceContainer: #FAEBE0;
-  --sys-surfaceContainerHigh: #F4E6DA;
-  --sys-surfaceContainerHighest: #EEE0D5;
+  --sys-surfaceContainerLow: #EFF5F6;
+  --sys-surfaceContainer: #E9EFF0;
+  --sys-surfaceContainerHigh: #E3E9EA;
+  --sys-surfaceContainerHighest: #DEE3E5;
 }
 
 /* Esquema OSCURO (Dark Scheme) */
 @media (prefers-color-scheme: dark) {
   :root {
-    --sys-primary: #FABA73;
-    --sys-surfaceTint: #FABA73;
-    --sys-onPrimary: #482900;
-    --sys-primaryContainer: #673D00;
-    --sys-onPrimaryContainer: #FFDDBB;
-    --sys-secondary: #E0C1A3;
-    --sys-onSecondary: #402D17;
-    --sys-secondaryContainer: #58432C;
-    --sys-onSecondaryContainer: #FDDDBD;
-    --sys-tertiary: #BDCC9C;
-    --sys-onTertiary: #293412;
-    --sys-tertiaryContainer: #3F4B26;
-    --sys-onTertiaryContainer: #D9E9B6;
+    --sys-primary: #E9C16C;
+    --sys-surfaceTint: #E9C16C;
+    --sys-onPrimary: #3F2E00;
+    --sys-primaryContainer: #5B4300;
+    --sys-onPrimaryContainer: #FFDF9E;
+    
+    --sys-secondary: #EAC16C;
+    --sys-onSecondary: #402D00;
+    --sys-secondaryContainer: #5C4300;
+    --sys-onSecondaryContainer: #FFDEA0;
+    
+    --sys-tertiary: #80D5D1;
+    --sys-onTertiary: #003735;
+    --sys-tertiaryContainer: #00504D;
+    --sys-onTertiaryContainer: #9CF1ED;
+    
     --sys-error: #FFB4AB;
     --sys-onError: #690005;
     --sys-errorContainer: #93000A;
     --sys-onErrorContainer: #FFDAD6;
-    --sys-background: #18120C;
-    --sys-onBackground: #EEE0D5;
-    --sys-surface: #18120C;
-    --sys-onSurface: #EEE0D5;
-    --sys-surfaceVariant: #50453A;
-    --sys-onSurfaceVariant: #D4C4B5;
-    --sys-outline: #9D8E81;
-    --sys-outlineVariant: #50453A;
+    
+    --sys-background: #17130B;
+    --sys-onBackground: #EBE1D4;
+    --sys-surface: #0E1415;
+    --sys-onSurface: #DEE3E5;
+    
+    --sys-surfaceVariant: #3F484A;
+    --sys-onSurfaceVariant: #BEC8C9;
+    --sys-outline: #899294;
+    --sys-outlineVariant: #3F484A;
+    
     --sys-shadow: #000000;
     --sys-scrim: #000000;
-    --sys-inverseSurface: #EEE0D5;
-    --sys-inverseOnSurface: #372F27;
-    --sys-inversePrimary: #845415;
-    --sys-primaryFixed: #FFDDBB;
-    --sys-onPrimaryFixed: #2B1700;
-    --sys-primaryFixedDim: #FABA73;
-    --sys-onPrimaryFixedVariant: #673D00;
-    --sys-secondaryFixed: #FDDDBD;
-    --sys-onSecondaryFixed: #281805;
-    --sys-secondaryFixedDim: #E0C1A3;
-    --sys-onSecondaryFixedVariant: #58432C;
-    --sys-tertiaryFixed: #D9E9B6;
-    --sys-onTertiaryFixed: #141F01;
-    --sys-tertiaryFixedDim: #BDCC9C;
-    --sys-onTertiaryFixedVariant: #3F4B26;
-    --sys-surfaceDim: #18120C;
-    --sys-surfaceBright: #403830;
-    --sys-surfaceContainerLowest: #130D07;
-    --sys-surfaceContainerLow: #211A14;
-    --sys-surfaceContainer: #251E17;
-    --sys-surfaceContainerHigh: #302921;
-    --sys-surfaceContainerHighest: #3B332C;
+    
+    --sys-inverseSurface: #DEE3E5;
+    --sys-inverseOnSurface: #2B3133;
+    --sys-inversePrimary: #775A0B;
+    
+    --sys-primaryFixed: #FFDF9E;
+    --sys-onPrimaryFixed: #261A00;
+    --sys-primaryFixedDim: #E9C16C;
+    --sys-onPrimaryFixedVariant: #5B4300;
+    
+    --sys-secondaryFixed: #FFDEA0;
+    --sys-onSecondaryFixed: #261A00;
+    --sys-secondaryFixedDim: #EAC16C;
+    --sys-onSecondaryFixedVariant: #5C4300;
+    
+    --sys-tertiaryFixed: #9CF1ED;
+    --sys-onTertiaryFixed: #00201F;
+    --sys-tertiaryFixedDim: #80D5D1;
+    --sys-onTertiaryFixedVariant: #00504D;
+    
+    --sys-surfaceDim: #0E1415;
+    --sys-surfaceBright: #343A3B;
+    --sys-surfaceContainerLowest: #090F10;
+    --sys-surfaceContainerLow: #171D1E;
+    --sys-surfaceContainer: #1B2122;
+    --sys-surfaceContainerHigh: #252B2C;
+    --sys-surfaceContainerHighest: #303637;
   }
 }
 
@@ -174,25 +196,49 @@
   --color-surfaceContainerHighest: var(--sys-surfaceContainerHighest);
 }
 
-/* ----------------------------------------------------------- */
-/* PALETAS FIJAS (Opcional - No cambian con el tema)           */
-/* Útiles si necesitas un tono exacto como bg-ref-primary-40   */
-/* ----------------------------------------------------------- */
-
+/* -------------------------------------------------- */
+/* PALETAS FIJAS (Valores absolutos del JSON nuevo)   */
+/* -------------------------------------------------- */
 @theme {
+  /* Primary Palette (#DFA800 seed) */
   --color-ref-primary-0: #000000;
-  --color-ref-primary-10: #2B1700;
-  --color-ref-primary-20: #482900;
-  --color-ref-primary-30: #673D00;
-  --color-ref-primary-40: #885200;
-  --color-ref-primary-50: #AA6800;
-  --color-ref-primary-60: #CE7F00;
-  --color-ref-primary-70: #F29600;
-  --color-ref-primary-80: #FFB868;
-  --color-ref-primary-90: #FFDDBB;
-  --color-ref-primary-95: #FFEEDF;
+  --color-ref-primary-10: #261A00;
+  --color-ref-primary-20: #3F2E00;
+  --color-ref-primary-30: #5B4300;
+  --color-ref-primary-40: #795900;
+  --color-ref-primary-50: #977100;
+  --color-ref-primary-60: #B78900;
+  --color-ref-primary-70: #D8A300;
+  --color-ref-primary-80: #F7BE26;
+  --color-ref-primary-90: #FFDF9E;
+  --color-ref-primary-95: #FFEFD4;
   --color-ref-primary-99: #FFFBFF;
   --color-ref-primary-100: #FFFFFF;
+
+  /* Secondary Palette */
+  --color-ref-secondary-0: #000000;
+  --color-ref-secondary-10: #251A01;
+  --color-ref-secondary-20: #3C2E11;
+  --color-ref-secondary-30: #544525;
+  --color-ref-secondary-40: #6D5C3A;
+  --color-ref-secondary-50: #877551;
+  --color-ref-secondary-60: #A28E68;
+  --color-ref-secondary-70: #BEA981;
+  --color-ref-secondary-80: #DAC49A;
+  --color-ref-secondary-90: #F8E0B4;
+  --color-ref-secondary-95: #FFEFD5;
+  --color-ref-secondary-100: #FFFFFF;
+
+   /* Neutral Palette (Grays) */
+  --color-ref-neutral-0: #000000;
+  --color-ref-neutral-10: #1C1B1B;
+  --color-ref-neutral-20: #313030;
+  --color-ref-neutral-40: #5F5E5E;
+  --color-ref-neutral-60: #929090;
+  --color-ref-neutral-80: #C9C6C5;
+  --color-ref-neutral-90: #E5E2E1;
+  --color-ref-neutral-95: #F4F0EF;
+  --color-ref-neutral-100: #FFFFFF;
 }
 
 
@@ -248,7 +294,7 @@
 
 html {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   scroll-behavior: smooth;
 }
 
@@ -260,6 +306,7 @@ html {
 }
 
 body {
+  height: 100%;
   font: 16px "DM Sans", system-ui, Arial, Helvetica, sans-serif;
   letter-spacing: var(--tracking-tight);
   color: white;
