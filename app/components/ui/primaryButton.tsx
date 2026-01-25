@@ -17,21 +17,21 @@ export default function PrimaryButton({ text, href, IconBtn, onClick, textSize="
                 ${textSize} tracking-tighter bg-primaryContainer text-onPrimaryContainer font-medium
                 transition ease-out duration-300 hover:scale-105 cursor-pointer ${extraclass}`;
 
+
     return (
         <>
             {href ?
                 (
                     <Link href={href} className={`${baseStyles}`}>
                         {text}
-                        <IconBtn className="size-5 text-inherit" strokeWidth={2.5} />
+                        <IconBtn className="size-[1em] text-inherit" strokeWidth={3} />
                     </Link>
                 ) : (
                     <button className={`${baseStyles}`}
                         onClick={onClick}>
 
-                        <IconBtn className="size-5 text-inherit" strokeWidth={2.5} />
+                        <IconBtn className="size-[1em] text-inherit" strokeWidth={3} />
                         {text}
-
                     </button>)}
 
         </>
