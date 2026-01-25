@@ -23,13 +23,13 @@ export default function PrimaryButton({ text, href, IconBtn, onClick, textSize="
                 (
                     <Link href={href} className={`${baseStyles}`}>
                         {text}
-                        <IconBtn className="size-5 text-onPrimaryContainer" strokeWidth={2.5} />
+                        <IconBtn className="size-5 text-inherit" strokeWidth={2.5} />
                     </Link>
                 ) : (
                     <button className={`${baseStyles}`}
                         onClick={onClick}>
 
-                        <IconBtn className="size-5 text-onPrimaryContainer" strokeWidth={2.5} />
+                        <IconBtn className="size-5 text-inherit" strokeWidth={2.5} />
                         {text}
 
                     </button>)}
