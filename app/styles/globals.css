@@ -23,7 +23,7 @@
   --sys-errorContainer: #FFDAD6;
   --sys-onErrorContainer: #93000A;
   
-  --sys-background: #FFF8F2;
+  --sys-background: #FFFFFF;
   --sys-onBackground: #1F1B13;
   --sys-surface: #F5FAFB;
   --sys-onSurface: #171D1E;
@@ -88,7 +88,8 @@
     --sys-errorContainer: #93000A;
     --sys-onErrorContainer: #FFDAD6;
     
-    --sys-background: #17130B;
+    /* --sys-background: #17130B; */
+    --sys-background: #0e0c07;
     --sys-onBackground: #EBE1D4;
     --sys-surface: #0E1415;
     --sys-onSurface: #DEE3E5;
