@@ -18,7 +18,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`flex flex-col h-screen antialiased`}>
+      <body className={`h-fit min-h-screen antialiased`}>
         <Navbar />
         {children}
         <FooterVariant />
