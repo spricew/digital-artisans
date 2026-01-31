@@ -10,7 +10,7 @@ import PrimaryButton from "./components/ui/PrimaryButton";
 
 export default function NotFound() {
   return (
-    <div className='flex flex-col justify-center items-center gap-3 w-full h-full'>
+    <div className='flex flex-col justify-center items-center gap-3 w-full h-screen'>
       <div className="flex items-center font-bold text-[11rem] text-onSurfaceVariant -my-4">
         4
         <img src="/notFoundImg.png" alt="Art Palette" className="h-44 object-cover -mx-10" />
