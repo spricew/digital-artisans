@@ -7,8 +7,9 @@ interface CardProps {
 export default function PrimaryCard({ title, description, price } : CardProps) {
     return (
         <div className="flex flex-col gap-3 w-56">
-            <div className="w-full aspect-square rounded-2xl bg-primaryContainer">
-                {/* imagen */}
+            <div className="w-full aspect-square rounded-2xl overflow-hidden bg-primaryContainer">
+                <img src="https://solopati.wordpress.com/wp-content/uploads/2014/11/ceramica-maya.jpg"
+                alt="imagen" className="w-full h-full object-center object-cover" />
             </div>
 
             <div className="flex flex-col gap-2 w-full">
