@@ -1,8 +1,8 @@
 'use client'
 
 import { useState } from 'react'
-import { Filter, X } from 'lucide-react'
 import { useRouter, useSearchParams, usePathname } from 'next/navigation'
+import { Filter, X } from 'lucide-react'
 
 export default function FilterButton() {
     const [isOpen, setIsOpen] = useState(false)
@@ -38,29 +38,30 @@ export default function FilterButton() {
         <div className="relative inline-block h-full">
             <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`flex justify-center items-center h-full aspect-square rounded-full 
+                className={`flex justify-center items-center h-full aspect-square rounded-full
+                bg-primaryContainer text-onPrimaryContainer
                 cursor-pointer transition-all duration-300 ease-out hover:scale-110 focus:outline-0
-                ${isOpen ? 'bg-primary text-white rotate-180' : 'bg-primaryContainer text-black'}`}
+                ${isOpen ? 'rotate-180' : 'rotate-0'}`}
             >
                 {isOpen ? <X size={20} /> : <Filter size={20} />}
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 top-full mt-3 w-72 bg-white rounded-2xl shadow-xl border border-gray-100 p-5 z-50 animate-in fade-in zoom-in-95 duration-200">
+                <div className="absolute right-0 top-full mt-3 w-72 bg-surfaceContainer rounded-2xl p-5 z-50 animate-in fade-in zoom-in-95 duration-200">
                     <div className="flex flex-col gap-4">
-                        <h3 className="font-semibold text-gray-700 text-lg">Configurar Filtros</h3>
+                        <h3 className="font-semibold text-onSurfaceVariant text-lg">Configurar Filtros</h3>
 
                         {/* Operador Lógico */}
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm text-gray-500 font-medium">Lógica:</span>
-                            <div className="flex bg-gray-100 p-1 rounded-lg">
+                            <span className="text-sm text-onSurfaceVariant font-medium">Lógica</span>
+                            <div className="flex bg-surfaceContainerHigh p-1 rounded-lg">
                                 {['AND', 'OR', 'NOT'].map((op) => (
                                     <button
                                         key={op}
                                         onClick={() => setOperator(op)}
                                         className={`flex-1 py-1 text-xs font-bold rounded-md transition-colors ${operator === op
-                                            ? 'bg-white text-black shadow-sm'
-                                            : 'text-gray-400 hover:text-gray-600'
+                                            ? 'bg-surfaceBright text-onSurfaceVariant shadow-sm'
+                                            : 'text-onSurfaceVariant/80 hover:text-onSurface'
                                             }`}
                                     >
                                         {op}
@@ -71,9 +72,9 @@ export default function FilterButton() {
 
                         {/* Selección de Categoría */}
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm text-gray-500 font-medium">Categoría:</span>
+                            <span className="text-sm text-onSurfaceVariant font-medium">Categoría</span>
                             <select
-                                className="w-full p-2 rounded-lg border border-gray-200 bg-gray-50 text-sm"
+                                className="w-full p-2 rounded-lg bg-surfaceContainerHigh text-sm"
                                 value={category}
                                 onChange={(e) => setCategory(e.target.value)}
                             >
@@ -88,10 +89,10 @@ export default function FilterButton() {
 
                         {/* Selección de Fecha */}
                         <div className="flex flex-col gap-1">
-                            <span className="text-sm text-gray-500 font-medium">Publicado desde:</span>
+                            <span className="text-sm text-onSurfaceVariant font-medium">Publicado desde</span>
                             <input
                                 type="date"
-                                className="w-full p-2 rounded-lg border border-gray-200 bg-gray-50 text-sm"
+                                className="w-full p-2 rounded-lg bg-surfaceContainerHigh text-sm"
                                 value={date}
                                 onChange={(e) => setDate(e.target.value)}
                             />
@@ -99,7 +100,7 @@ export default function FilterButton() {
 
                         <button
                             onClick={handleApply}
-                            className="w-full mt-2 py-2 bg-black text-white rounded-xl text-sm font-medium hover:bg-gray-800"
+                            className="w-full mt-2 py-2 bg-surfaceBright text-onSurfaceVariant rounded-full text-sm font-medium cursor-pointer"
                         >
                             Aplicar Filtros
                         </button>
