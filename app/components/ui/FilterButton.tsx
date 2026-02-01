@@ -32,20 +32,21 @@ export default function FilterButton() {
         <div className="relative inline-block h-full">
             <button 
                 onClick={() => setIsOpen(!isOpen)}
-                className={`flex justify-center items-center h-full aspect-square rounded-full 
+                className={`flex justify-center items-center h-full aspect-square rounded-full
+                bg-primaryContainer text-onPrimaryContainer
                 cursor-pointer transition-all duration-300 ease-out hover:scale-110 focus:outline-0
-                ${isOpen ? 'bg-primary text-white rotate-180' : 'bg-primaryContainer text-black'}`}
+                ${isOpen ? 'rotate-180' : 'rotate-0'}`}
             >
                 {isOpen ? <X size={20} /> : <Filter size={20} />}
             </button>
 
             {isOpen && (
-                <div className="absolute right-0 top-full mt-3 w-64 bg-white rounded-2xl shadow-xl border border-gray-100 p-5 z-50">   
+                <div className="absolute right-0 top-full mt-3 w-64 bg-surfaceContainer rounded-2xl p-5 z-50">   
                     <div className="flex flex-col gap-4">
-                        <h3 className="font-semibold text-gray-700 text-lg">Categoría</h3>
+                        <h3 className="font-semibold text-onSurfaceVariant text-lg">Categoría</h3>
 
                         <select 
-                            className="w-full p-2 rounded-lg border border-gray-200 bg-gray-50 text-base"
+                            className="w-full p-2 rounded-lg bg-surfaceContainerHighest text-base"
                             value={category}
                             onChange={(e) => setCategory(e.target.value)}
                         >
