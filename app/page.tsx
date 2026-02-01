@@ -1,4 +1,4 @@
-import { products } from "@/lib/data/articles";
+import { products } from "@/lib/data/products";
 import FilterButton from "./components/ui/FilterButton";
 import PrimaryCard from "./components/ui/PrimaryCard";
 import SearchBar from "./components/ui/SearchBar";
